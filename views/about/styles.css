@@ -12,9 +12,18 @@ body {
 
 .body-container {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
+    height: auto;
     background-color: lightgray;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.container-group {
+    padding: 100px;
+    height: auto;
+    justify-content: center;
+    display: flex;
     align-items: center;
 }
