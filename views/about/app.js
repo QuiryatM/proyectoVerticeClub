@@ -1,5 +1,5 @@
 import { cardOnly } from "../../components/cards/cardOnly/cardOnly.js";
-import { cardOnly } from "../../components/cards/cardOnly/cardWithImage.js";
+import { cardWithImage } from "../../components/cards/cardImage/cardWithImage.js";
 
 const containerDescription = document.querySelector(".container-group");
 
