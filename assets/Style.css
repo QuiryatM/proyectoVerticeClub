@@ -1,0 +1,86 @@
+/* Style.css */
+body {
+    background-color: #000000 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+}
+
+.logo-v {
+    color: #D4AF37;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+/* Cajas Generales */
+.custom-box {
+    background-color: #CFD1D2 !important;
+    border-radius: 20px;
+    border: none;
+}
+
+/* Estilo de la Card con efecto de expansión */
+.card-custom {
+    background-color: #CFD1D2 !important;
+    border-radius: 25px;
+    padding: 25px;
+    height: 280px; /* Tamaño inicial */
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: none;
+}
+
+.card-header-name {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Contenido que se revela al expandir */
+.extra-content {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.3s ease, max-height 0.5s ease;
+    text-align: center;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px auto;
+    border: 4px solid #000;
+}
+
+.card-body-text {
+    text-align: justify;
+    font-size: 0.95rem;
+    padding: 0 10px;
+}
+
+/* ESTADO EXPANDIDO */
+.card-expanded {
+    height: 520px !important; /* Se agranda como un modal */
+    z-index: 100;
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.card-expanded .extra-content {
+    opacity: 1;
+    max-height: 450px;
+}
+
+.card-active {
+    outline: 4px solid #007BFF !important;
+}
+
+/* Footer */
+.footer-custom {
+    background-color: #CFD1D2;
+    border-radius: 25px 25px 0 0;
+}

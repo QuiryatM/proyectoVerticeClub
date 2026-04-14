@@ -1,14 +1,8 @@
-export function cardWithImage(image, name, description, item) {
+export function cardOnly(title, description) {
     return `
-        <div class="card" style="width: 18rem;">
-            <img src="${image}" class="card-img-top" alt="${image}">
-            <div class="card-body">
-                <h5 class="card-title">${name}</h5>
-                <p class="card-text">${description}</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">${item}</li>
-            </ul>
+        <div class="card-custom">
+            <div class="card-label">${description}</div>
+            <div class="card-name">${title}</div>
         </div>
     `;
 }
